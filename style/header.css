@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+}
+
+.header-logo {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Playfair Display", serif;
+  color: #141414;
+  text-transform: uppercase;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 3.75rem;
+  color: #141414;
+  padding: 10px 20px;
+  display: block;
+}

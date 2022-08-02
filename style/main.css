@@ -1,0 +1,69 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 120px;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.main-conteudo p {
+  color: #525252;
+}
+
+.main-foto {
+  border-radius: 5px;
+}
+
+.main h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  color: #141414;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.main h1::before {
+  content: "";
+  background: url(../img/detalhe.svg) no-repeat center;
+  display: block;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  .main h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .main h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .main-foto {
+    display: none;
+  }
+}

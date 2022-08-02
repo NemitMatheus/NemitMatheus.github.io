@@ -1,0 +1,41 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./projetos.css);
+@import url(./cursos.css);
+@import url(./footer.css);
+
+.container {
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.paragrafo {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.titulo {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 170px;
+  line-height: 144px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
